@@ -1,0 +1,46 @@
+name: Inventory Kits
+main: me.mrnerdman281.invkits.InvKits
+version: 1.0
+commands:
+  invkit:
+    description: Receive of give all tools and armor of a certain material
+    usage: /invkit <material> [player]
+  invclear:
+    description: Clear your inventory
+    usage: /invclear
+permissions:
+  invkit.*:
+    description: All permissions for Inventory Kits
+    children:
+      invkit.diamond: true
+      invkit.gold: true
+      invkit.stone: true
+      invkit.wood: true
+      invkit.give.diamond: true
+      invkit.give.gold: true
+      invkit.give.stone: true
+      invkit.give.wood: true
+  invkit.diamond:
+    description: Permission to give yourself a diamond inventory kit
+    default: op
+  invkit.gold:
+    description: Permission to give yourself a gold inventory kit
+    default: op
+  invkit.stone:
+    description: Permission to give yourself a stone inventory kit
+    default: op
+  invkit.wood:
+    description: Permission to give yourself a wood inventory kit
+    default: true
+  invkit.give.diamond:
+    description: Permission to give someone else a diamond inventory kit
+    default: op
+  invkit.give.gold:
+    description: Permission to give someone else a gold inventory kit
+    default: op
+  invkit.give.stone:
+    description: Permission to give someone else a stone inventory kit
+    default: op
+  invkit.give.wood:
+    description: Permission to give someone else a wood inventory kit
+    default: op
